@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 750px;
+
+}
+
+.App{
+  min-height: 100vh;
+  background: #f0f8ff4d;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*search*/
+.search{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-input{
+  width: 500px;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 20px;
+
+  border-width: 1px;
+}
+
+.search-button{
+  height: 45px;
+  border-radius: 6px;
+  margin-left: 15px;
+  background: #42d2cd;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 900;
+  border: 0;
+}
+.search-button:hover{
+  background: #132c42;
+  color: #FFF;
+}
+
+input:focus,
+button:focus{
+  outline:0;
+}
+
+/*Canvas*/
+.Canvas{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Canvas > div{
+  box-shadow: 0 2px 11px 0 rgba(49,68,204,0.08);
+  padding: 20px;
+  background: #FFF;
+  max-width: 1000px;
+  overflow: auto;
+}
+
+.title{
+  font-size: 22px;
+  /*width: 20px;*/
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #132c42;
+  margin: 20px;
+}
+
+.canvas-area{
+  padding-top: 15px;
+  border-top: 1px solid #66879c;
+}
+
+
+
+@media (max-width: 750px) and (min-width: 375px) {
+  .App-header{
+    align-items: start;
+  }
+  .App-logo {
+    width: 300px;
+  }
+  .Canvas{
+    padding: 10px 20px;
+  }
+  .Canvas > div{
+    max-width: 400px;
+    width: 100%;
+  }
+}
