@@ -15,9 +15,8 @@ class Canvas extends Component {
     this.init(nextProps.data);
   }
   init(data) {
-    let tokens = data.tokens;
-    let entities = data.entities;
-
+    let tokens = data.payload.response.tokens;
+    let entities = data.payload.response.entities;
     let c = document.getElementById("myCanvas");
     let ctx = c.getContext("2d");
     // 设置画布宽高
